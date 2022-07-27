@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Quản lí tuyển sinh</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        Quản lí tuyển sinh
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <input type="number" id="diemChuan" class="form-control" placeholder="Nhập điểm chuẩn của Hội Đồng">
+                            <input type="number" id="diemMon1" class="form-control my-4" placeholder="Nhập điểm môn thứ 1" />
+                            <input type="number" id="diemMon2" class="form-control my-4" placeholder="Nhập điểm môn thứ 2" />
+                            <input type="number" id="diemMon3" class="form-control my-4" placeholder="Nhập điểm môn thứ 3" />
+                            Chọn khu vực:
+                            <select class="form-control" id="khuVuc" >
+                                <option value="khu_vuc0">không được ưu tiên</option>
+                                <option value="khu_vucA">A</option>
+                                <option value="khu_vucB">B</option>
+                                <option value="khu_vucC">C</option>
+                              </select>
+                              Chọn đối tượng:
+                              <select class="form-control" id="doiTuong">
+                                <option value="doi_tuong0">không được ưu tiên</option>
+                                <option value="doi_tuong1">1</option>
+                                <option value="doi_tuong2">2</option>
+                                <option value="doi_tuong3">3</option>
+                              </select>
+                            <!-- <input type="option" id="khuVuc" class="form-control my-4" placeholder="Nhập khu vực" /> -->
+                            <!-- <input type="option" id="doiTuong" class="form-control my-4" placeholder="Nhập đối tượng" /> -->
+
+                        </div>
+                        <button class="btn btn-success" id="tinh">Tính</button>
+                    </div>
+                    <div class="card-footer text-white text-center bg-success " id="showInfoTotal">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
